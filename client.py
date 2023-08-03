@@ -10,9 +10,9 @@ def randomChoice(num):
     if num==0:
         return "left"
     elif num==1:
-        return "jump"
-    elif num==2:
         return "right"
+    elif num==2:
+        return "jump"
 
 # state = (plataforma, direcao)
 
