@@ -66,7 +66,9 @@ def q_update(q_table,state,action,next_state,rw,alpha,gamma):
 
 q_table = np.loadtxt('resultado.txt')
 
-state = (0,0)
+np.set_printoptions(precision=6)
+
+state = (23,0)
 
 alpha = 0.2
 gamma = 0.5
@@ -87,7 +89,7 @@ while(True):
 
     q_table[state_index, random_num] = q_update(q_table,state_index,random_num,next_state_index,rw,alpha,gamma)   # atualiza a q_table
 
-    np.savetxt('resultado.txt', q_table)    # escreve no resultado.txt
+    np.savetxt('resultado.txt', q_table, fmt="%f")    # escreve no resultado.txt
 
     print(f'action:{action}')
     print(f'state:{next_state}')
