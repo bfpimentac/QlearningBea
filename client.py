@@ -80,11 +80,11 @@ q_table = np.loadtxt('resultado.txt')
 
 np.set_printoptions(precision=6)
 
-state = (0,0)   # estado inicial 
+state = (14,0)   # estado inicial 
 
 alpha = 0.2     # taxa de aprenzidagem que diz o quão rápido o agente aprende
-gamma = 0.7     # fator de desconto, diz o peso da recompensa futura em relação à imediata
-epsilon = 0    # epsilon greedy strategy -> uma taxa que define se o agente irá tomar ações aleatórias ou embasadas
+gamma = 0.9     # fator de desconto, diz o peso da recompensa futura em relação à imediata
+epsilon = 1    # epsilon greedy strategy -> uma taxa que define se o agente irá tomar ações aleatórias ou embasadas
 
 while(True):
 
